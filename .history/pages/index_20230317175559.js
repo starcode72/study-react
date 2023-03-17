@@ -28,6 +28,7 @@ export default function Home() {
             height={37}
             priority
           />
+        <Headline />
           <div className={styles.thirteen}>
             <Image
               src="/thirteen.svg"
@@ -39,7 +40,6 @@ export default function Home() {
           </div>
         </div>
 
-        <Headline title="Index page" />
         <div className={styles.grid}>
           <a
             href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"

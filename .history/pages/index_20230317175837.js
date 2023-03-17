@@ -39,7 +39,7 @@ export default function Home() {
           </div>
         </div>
 
-        <Headline title="Index page" />
+        <Headline title='' />
         <div className={styles.grid}>
           <a
             href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"

@@ -19,6 +19,8 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
+        
+        
         <div className={styles.center}>
           <Image
             className={styles.logo}
@@ -39,7 +41,6 @@ export default function Home() {
           </div>
         </div>
 
-        <Headline title="Index page" />
         <div className={styles.grid}>
           <a
             href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"

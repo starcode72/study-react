@@ -3,9 +3,7 @@ import Image from "next/image";
 import { Inter } from "next/font/google";
 import styles from "@/styles/Home.module.css";
 
-import Hoge from "../components/Hoge";
-
-import Headline from "@/components/Headline";
+import hoge from "../components/Hoge";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -19,6 +17,30 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={styles.main}>
+        <div className={styles.description}>
+          <p>
+            Get started by editing&nbsp;
+            <code className={styles.code}>pages/index.js</code>
+          </p>
+          <div>
+            <a
+              href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              By{" "}
+              <Image
+                src="/vercel.svg"
+                alt="Vercel Logo"
+                className={styles.vercelLogo}
+                width={100}
+                height={24}
+                priority
+              />
+            </a>
+          </div>
+        </div>
+
         <div className={styles.center}>
           <Image
             className={styles.logo}
@@ -39,7 +61,6 @@ export default function Home() {
           </div>
         </div>
 
-        <Headline title="Index page" />
         <div className={styles.grid}>
           <a
             href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
@@ -99,7 +120,7 @@ export default function Home() {
           </a>
         </div>
 
-        <Hoge />
+        <Hoge></Hoge>
       </main>
     </>
   );
