@@ -1,6 +1,6 @@
 import React from "react";
 
-import styles from '/components/Headline.module.css'
+import styles from "@/styles/Home.module.css";
 import Image from "next/image";
 
 export function Headline(props) {
@@ -28,7 +28,6 @@ export function Headline(props) {
               priority
             />
           </a>
-          <button onClick={props.onClick}>BTN</button>
         </div>
       </div>
     </div>
