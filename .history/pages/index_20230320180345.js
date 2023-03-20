@@ -7,7 +7,7 @@ import Hoge from "../components/Hoge";
 
 import { Headline } from "@/components/Headline";
 
-import {Header} from "../components/Header";
+import {Header from "../components/Header";
 
 const inter = Inter({ subsets: ["latin"] });
 
