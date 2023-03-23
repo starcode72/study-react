@@ -12,9 +12,11 @@ import { Header } from "../components/Header";
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
+
   const handleClick = (e) => {
-    alert(123);
-  };
+    function() {
+      alert(123)
+  }
   return (
     <>
       <Head>

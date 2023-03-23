@@ -12,5 +12,9 @@
     "next": "13.2.4",
     "react": "18.2.0",
     "react-dom": "18.2.0"
-  }
+  },
+  "main": "index.js",
+  "repository": "https://github.com/starcode72/study-react.git",
+  "author": "starcode72 <93559665+starcode72@users.noreply.github.com>",
+  "license": "MIT"
 }

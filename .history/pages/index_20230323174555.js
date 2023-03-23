@@ -7,14 +7,11 @@ import Hoge from "../components/Hoge";
 
 import { Headline } from "@/components/Headline";
 
-import { Header } from "../components/Header";
+import {Header} from "../components/Header";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
-  const handleClick = (e) => {
-    alert(123);
-  };
   return (
     <>
       <Head>
@@ -24,7 +21,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header />
-      <button onClick={handleClick}>BTN</button>
+      <button onClick={fuction() {}}>BTN</button>
       <main className={styles.main}>
         <div className={styles.center}>
           <Image
