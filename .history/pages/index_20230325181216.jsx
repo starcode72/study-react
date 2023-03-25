@@ -14,13 +14,9 @@ import { Header } from "../components/Header";
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
-  const [foo, setFoo] = useState(1);
-
+  const [foo, setFoo] = useState;()
   const handleClick = (e) => {
-    // setFoo((foo) => foo + 1);
-    setFoo(function (foo) {
-      return foo + 10;
-    });
+    alert(123);
   };
 
   useEffect(() => {
@@ -122,8 +118,6 @@ export default function Home() {
             </p>
           </a>
         </div>
-
-        <button onClick={handleClick}>{foo}</button>
 
         <Hoge />
       </main>

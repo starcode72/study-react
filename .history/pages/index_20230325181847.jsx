@@ -19,7 +19,7 @@ export default function Home() {
   const handleClick = (e) => {
     // setFoo((foo) => foo + 1);
     setFoo(function (foo) {
-      return foo + 10;
+      return foo + 1;
     });
   };
 

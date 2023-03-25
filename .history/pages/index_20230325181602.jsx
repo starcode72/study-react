@@ -17,10 +17,11 @@ export default function Home() {
   const [foo, setFoo] = useState(1);
 
   const handleClick = (e) => {
-    // setFoo((foo) => foo + 1);
-    setFoo(function (foo) {
-      return foo + 10;
-    });
+    setFoo(2);
+  };
+
+  const handleClick = (e) => {
+    alert(123);
   };
 
   useEffect(() => {

@@ -14,14 +14,12 @@ import { Header } from "../components/Header";
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
-  const [foo, setFoo] = useState(1);
 
+  const [foo, setFoo] = useState(1);
+  
   const handleClick = (e) => {
-    // setFoo((foo) => foo + 1);
-    setFoo(function (foo) {
-      return foo + 10;
-    });
-  };
+    setFoo(2)
+  }
 
   useEffect(() => {
     document.body.style.backgroundColor = "lightblue";
