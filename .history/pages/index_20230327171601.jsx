@@ -18,8 +18,6 @@ export default function Home() {
 
   const [text, setText] = useState("");
 
-  const [isShow, setIsShow] = useState(true);
-
   const handleClick = (e) => {
     // setFoo((foo) => foo + 1);
     setFoo(function (foo) {
@@ -35,8 +33,6 @@ export default function Home() {
       console.log("unmount");
     };
   }, []);
-
-  console.log(text);
 
   return (
     <>
@@ -138,21 +134,6 @@ export default function Home() {
             setText(e.target.value);
           }}
         />
-
-        <button
-          onClick={() => {
-            setIsShow((isShow) => !isShow);
-            // setIsShow((isShow) => {
-            //   if (isShow === true) {
-            //     return false;
-            //   } else {
-            //     return true;
-            //   }
-            // });
-          }}
-        >
-          {isShow ? "show" : "hide"}
-        </button>
 
         <Hoge />
       </main>

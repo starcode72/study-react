@@ -141,7 +141,6 @@ export default function Home() {
 
         <button
           onClick={() => {
-            setIsShow((isShow) => !isShow);
             // setIsShow((isShow) => {
             //   if (isShow === true) {
             //     return false;

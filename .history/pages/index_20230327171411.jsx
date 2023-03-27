@@ -16,9 +16,7 @@ const inter = Inter({ subsets: ["latin"] });
 export default function Home() {
   const [foo, setFoo] = useState(1);
 
-  const [text, setText] = useState("");
-
-  const [isShow, setIsShow] = useState(true);
+  conat
 
   const handleClick = (e) => {
     // setFoo((foo) => foo + 1);
@@ -35,8 +33,6 @@ export default function Home() {
       console.log("unmount");
     };
   }, []);
-
-  console.log(text);
 
   return (
     <>
@@ -130,29 +126,6 @@ export default function Home() {
         </div>
 
         <button onClick={handleClick}>{foo}</button>
-
-        <input
-          type="text"
-          value={text}
-          onChange={(e) => {
-            setText(e.target.value);
-          }}
-        />
-
-        <button
-          onClick={() => {
-            setIsShow((isShow) => !isShow);
-            // setIsShow((isShow) => {
-            //   if (isShow === true) {
-            //     return false;
-            //   } else {
-            //     return true;
-            //   }
-            // });
-          }}
-        >
-          {isShow ? "show" : "hide"}
-        </button>
 
         <Hoge />
       </main>
