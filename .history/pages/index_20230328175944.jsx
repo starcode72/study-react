@@ -27,20 +27,10 @@ export default function Home() {
     });
   };
 
-  const [array, setArray] = useState([]);
+  const [array, setArray] = useState([1]);
 
   const handleAdd = useCallback(() => {
-    setArray((prevArray) => {
-      if (prevArray.some((item) => item === text)) {
-        alert("already exist");
-      }
-      const newArray = [...prevArray, text];
-      // const newArray = prevArray;
-      // newArray.push(1);
-      console.log(newArray === prevArray);
-      return newArray;
-    });
-  }, [text]);
+  }, []);
 
   useEffect(() => {
     document.body.style.backgroundColor = "lightblue";

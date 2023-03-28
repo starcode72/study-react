@@ -31,9 +31,7 @@ export default function Home() {
 
   const handleAdd = useCallback(() => {
     setArray((prevArray) => {
-      if (prevArray.some((item) => item === text)) {
-        alert("already exist");
-      }
+      if(prevA)
       const newArray = [...prevArray, text];
       // const newArray = prevArray;
       // newArray.push(1);

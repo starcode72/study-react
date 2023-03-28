@@ -3,7 +3,7 @@ import Image from "next/image";
 import { Inter } from "next/font/google";
 import styles from "@/styles/Home.module.css";
 
-import { useCallback, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 
 import Hoge from "../components/Hoge";
 
@@ -28,19 +28,6 @@ export default function Home() {
   };
 
   const [array, setArray] = useState([]);
-
-  const handleAdd = useCallback(() => {
-    setArray((prevArray) => {
-      if (prevArray.some((item) => item === text)) {
-        alert("already exist");
-      }
-      const newArray = [...prevArray, text];
-      // const newArray = prevArray;
-      // newArray.push(1);
-      console.log(newArray === prevArray);
-      return newArray;
-    });
-  }, [text]);
 
   useEffect(() => {
     document.body.style.backgroundColor = "lightblue";
@@ -170,11 +157,8 @@ export default function Home() {
         </button>
         <Hoge />
 
-        <button onClick={handleAdd}>add</button>
         <ul>
-          {array.map((item) => {
-            return <li key={item}>{item}</li>;
-          })}
+          {}
         </ul>
       </main>
     </>
